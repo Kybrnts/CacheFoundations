@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2015.1 (Build 429U)" ts="2015-07-23 18:13:14">
+<Class name="Simple.Human">
+<Description>
+Exercise 2-3 Class source
+</Description>
+<Super>%Persistent,%Populate</Super>
+<TimeChanged>63756,65565.205439</TimeChanged>
+<TimeCreated>63756,65387.214605</TimeCreated>
+
+<Property name="Name">
+<Type>%String</Type>
+<Required>1</Required>
+</Property>
+
+<Property name="PhoneNum">
+<Type>%String</Type>
+</Property>
+
+<Property name="State">
+<Type>%String</Type>
+</Property>
+
+<Parameter name="SPECIES">
+<Default>Homo Sapiens</Default>
+</Parameter>
+
+<Storage name="Default">
+<Type>%Library.CacheStorage</Type>
+<DataLocation>^Simple.HumanD</DataLocation>
+<DefaultData>HumanDefaultData</DefaultData>
+<IdLocation>^Simple.HumanD</IdLocation>
+<IndexLocation>^Simple.HumanI</IndexLocation>
+<StreamLocation>^Simple.HumanS</StreamLocation>
+<Data name="HumanDefaultData">
+<Value name="1">
+<Value>%%CLASSNAME</Value>
+</Value>
+<Value name="2">
+<Value>Name</Value>
+</Value>
+<Value name="3">
+<Value>PhoneNum</Value>
+</Value>
+<Value name="4">
+<Value>State</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+</Export>
