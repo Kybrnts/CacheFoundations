@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2015.1 (Build 429U)" ts="2015-07-23 16:25:24">
+<Class name="Simple.Demo">
+<Description>
+First Caché class exercise</Description>
+<TimeChanged>63756,57797.46593</TimeChanged>
+<TimeCreated>63756,55732.278534</TimeCreated>
+
+<UDLText name="T">
+<Content><![CDATA[
+// First method of my first class
+
+]]></Content>
+</UDLText>
+
+<Method name="Hello">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>name:%String,*nameReversed:%String</FormalSpec>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[
+	/* Method signature: Name, arguments and return type.
+	 * To run class methods, use "##class syntax:"
+	 * > do ##class(package.class).method(argumetns)
+	 * > set variable = ##class(package.class).method(argumetns)
+	 * If issued from terminal remember to "zn" to the right namespace first.
+	 */
+	
+	// Defines/sets a string variable
+	set affirmation = ""
+	try {
+		write !, "Hello World!"
+		set nameReversed = $reverse(name)
+		set affirmation = name _ " is your friend."
+	} catch ex {
+		write !, ex.Name, " Affirmation requires name argument."
+	}
+		quit affirmation
+]]></Implementation>
+</Method>
+</Class>
+</Export>
